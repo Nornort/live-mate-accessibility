@@ -1,0 +1,7 @@
+#!/bin/sh
+lb config noauto \
+    --architectures amd64 \
+    --binary-images hdd \
+    --mirror-bootstrap http://ftp.ch.debian.org/debian/ \
+    --mirror-binary http://ftp.ch.debian.org/debian/ \
+    "${@}"
