@@ -1,7 +1,8 @@
 #!/bin/sh
 lb config noauto \
     --architectures amd64 \
-    --binary-images hdd \
-    --mirror-bootstrap http://ftp.ch.debian.org/debian/ \
-    --mirror-binary http://ftp.ch.debian.org/debian/ \
+    --binary-images iso-hybrid \
+    --archive-areas "main contrib non-free" \
+    --mirror-bootstrap http://ftp.fr.debian.org/debian/ \
+    --mirror-binary http://ftp.fr.debian.org/debian/ \
     "${@}"
