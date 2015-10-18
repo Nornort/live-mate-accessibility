@@ -1,0 +1,11 @@
+isolinux
+syslinux-common
+brltty
+openssh-server
+cryptsetup
+ecryptfs-utils
+kexec-tools
+live-config
+debian-installer
+debian-installer-launcher
+firmware-linux-free

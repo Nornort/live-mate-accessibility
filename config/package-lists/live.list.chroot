@@ -1,6 +1,2 @@
-live-boot
-live-config
-live-config-systemd
-debian-installer
-debian-installer-launcher
-initramfs-tools
+live-manual
+live-tools

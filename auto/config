@@ -1,8 +1,28 @@
 #!/bin/sh
+
+set -e
+
+case "$(dpkg --print-architecture)" in
+    amd64)
+        _LINUX_FLAVOURS="amd64"
+        _SOURCE="true"
+        ;;
+
+    i386)
+        _LINUX_FLAVOURS="486 686-pae"
+        _SOURCE="false"
+        ;;
+esac
+
 lb config noauto \
-    --architectures amd64 \
+    --clean \
     --binary-images iso-hybrid \
+    --debian-installer live \
+    --distribution jessie \
+    --apt aptitude \
+    --apt-recomends true \
+    --linux-flavours "${_LINUX_FLAVOURS}" \
+    --source "${_SOURCE}" \
     --archive-areas "main contrib non-free" \
-    --mirror-bootstrap http://ftp.fr.debian.org/debian/ \
-    --mirror-binary http://ftp.fr.debian.org/debian/ \
+    --bootappend-live 'boot=live config quiet splash persistence' \
     "${@}"
