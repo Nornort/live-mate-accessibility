@@ -1,5 +1,1 @@
-task-french
-
-#if PARENT_DISTRIBUTION wheezy
-	console-tools
-#endif
+task-english

@@ -1,27 +1,8 @@
-#task-mate-desktop (#712696)
-# Depends
-tasksel task-desktop mate-desktop-environment
-# Recommends
-#if LB_APT_RECOMMENDS true
-	mate-desktop-environment-extras
-	libreoffice-gnome
-	libreoffice-evolution
-	gimp
-	synaptic
-	iceweasel
-	libreoffice
-	libreoffice-gcj
-	libreoffice-help-en-us
-	mythes-fr
-	hunspell-fr
-	hyphen-fr
-	network-manager-gnome
-#endif
-
+task-mate-desktop
 task-print-server
 
 plymouth
 plymouth-x11
 
-#gstreamer-vaapi
+gstreamer1.0-vaapi
 i965-va-driver
