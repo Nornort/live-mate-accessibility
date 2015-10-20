@@ -1,6 +1,4 @@
-# Depends
 tasksel task-desktop mate-desktop-environment
-# Recommends
 #if LB_APT_RECOMMENDS true
 	mate-desktop-environment-extras
 	libreoffice-gnome
@@ -22,5 +20,4 @@ task-print-server
 plymouth
 plymouth-x11
 
-gstreamer-vaapi
 i965-va-driver
