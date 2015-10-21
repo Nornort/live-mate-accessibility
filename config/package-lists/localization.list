@@ -1,4 +1,5 @@
 task-french
+task-french-desktop
 
 #if PARENT_DISTRIBUTION wheezy
 	console-tools

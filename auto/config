@@ -24,5 +24,4 @@ lb config noauto \
     --linux-flavours "${_LINUX_FLAVOURS}" \
     --source "${_SOURCE}" \
     --archive-areas "main contrib non-free" \
-    --bootappend-live 'boot=live config quiet splash persistence' \
     "${@}"

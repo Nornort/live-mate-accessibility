@@ -9,3 +9,4 @@ live-config
 debian-installer
 debian-installer-launcher
 firmware-linux-free
+sudo
