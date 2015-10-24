@@ -10,3 +10,7 @@ debian-installer
 debian-installer-launcher
 firmware-linux-free
 sudo
+vim
+htop
+tree
+tmux
