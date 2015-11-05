@@ -5,11 +5,13 @@ set -e
 case "$(dpkg --print-architecture)" in
     amd64)
         _LINUX_FLAVOURS="amd64"
+        _ARCHITECTURE="amd64"
         _SOURCE="true"
         ;;
 
     i386)
         _LINUX_FLAVOURS="486 686-pae"
+        _ARCHITECTURE="i386"
         _SOURCE="false"
         ;;
 esac
@@ -21,6 +23,7 @@ lb config noauto \
     --distribution jessie \
     --apt aptitude \
     --apt-recomends true \
+    --architecture $(_ARCHITECTURE)\
     --linux-flavours "${_LINUX_FLAVOURS}" \
     --source "${_SOURCE}" \
     --archive-areas "main contrib non-free" \
