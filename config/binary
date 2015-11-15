@@ -62,7 +62,7 @@ LB_DEBIAN_INSTALLER_GUI="true"
 LB_GRUB_SPLASH=""
 
 # $LB_HDD_LABEL: set hdd label
-# (Default: )
+# (Default: MATE-ACCESSIBILITY)
 LB_HDD_LABEL="MATE-ACCESSIBILITY"
 
 # $LB_HDD_SIZE: set hdd filesystem size
