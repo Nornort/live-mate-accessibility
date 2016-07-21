@@ -1,1 +1,2 @@
 deb http://debian.hypra.fr/debian/ jessie main contrib non-free
+deb-src http://debian.hypra.fr/debian/ jessie main contrib non-free

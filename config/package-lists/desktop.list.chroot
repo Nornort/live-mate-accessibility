@@ -9,10 +9,13 @@ tasksel task-desktop mate-desktop-environment
 	libreoffice
 	libreoffice-gcj
 	libreoffice-help-en-us
-	mythes-fr
-	hunspell-fr
-	hyphen-fr
 	network-manager-gnome
+#endif
+
+#if LIVE_LANGAGE fr
+    mythes-fr
+    hunspell-fr
+    hyphen-fr
 #endif
 
 task-print-server

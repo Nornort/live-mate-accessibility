@@ -1,3 +1,7 @@
 mate-accessibility-full
-mate-accessibility-mbrola-fr
+mate-accessibility-mbrola-en
 mate-accessibility-misc
+
+#if LIVE_LANGAGE fr
+    mate-accessibility-mbrola-fr
+#endif
